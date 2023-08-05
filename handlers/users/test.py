@@ -1,0 +1,1 @@
+from telegram.ext import Updater, CommandHandler; updater = Updater(token='YOUR_BOT_TOKEN', use_context=True); updater.dispatcher.add_handler(CommandHandler('start', lambda u,c: c.bot.send_message(chat_id=u.effective_chat.id, text='Hello!'))); updater.start_polling() 
